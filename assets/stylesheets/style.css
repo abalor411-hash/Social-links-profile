@@ -3,15 +3,87 @@
     src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
     font-size: 0.6875rem;
 }
-body {
-    font-family: Inter, system-ui, sans-serif;
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+
+    --White: hsl(0, 0%, 100%);
+
+    --Grey700: hsl(0, 0%, 20%);
+    --Grey800: hsl(0, 0%, 12%);
+    --Grey900: hsl(0, 0%, 8%);
 }
 
-.attribution { 
-    font-size: 0.6875rem;
-    text-align: center;
+body {
+    font-family: Inter, system-ui, sans-serif;
+    color: var(--White);
+    background-color: var(--Grey900);
+    display: flex;
+    justify-content: center;
     align-items: center;
- }
-.attribution a {
-    color: hsl(228, 45%, 44%); 
+    height: 100vh;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--Green)
+}
+
+p {
+    font-size: 14px;
+    color: rgb(223, 223, 223);
+}
+
+a {
+    font-weight: 14px;
+    font-weight: 600;
+}
+
+img {
+    border-radius: 50%;
+    max-width: 100px;
+    margin-bottom: 24px;
+}
+
+.card {
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 16px;
+    background-color: var(--Grey800);
+    padding: 40px;
+
+}
+
+.card--info {
+    line-height: 32px;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.card--info p {
+    margin-top: 12px;
+}
+
+.card--links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.button {
+    padding: 12px 90px;
+    background-color: var(--Grey700);
+    border-radius: 8px;
+}
+
+.button:hover {
+    color: var(--Grey900);
+    background-color: var(--Green);
+    cursor: pointer;
 }
