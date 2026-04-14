@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Inter";
+    src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+    font-size: 0.6875rem;
+}
+body {
+    font-family: Inter, system-ui, sans-serif;
+}
+
+.attribution { 
+    font-size: 0.6875rem;
+    text-align: center;
+    align-items: center;
+ }
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
